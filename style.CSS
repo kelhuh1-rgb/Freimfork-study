@@ -171,7 +171,8 @@ textarea{
     margin-top: 100px;
 }
 
-.mg{margin-top: 10px;
+.mg{
+    margin-top: 10px;
     width: px;
     margin-left: 200px;
 }
@@ -232,4 +233,51 @@ textarea{
     margin-left: 650px;
     font-size: 50px;
     margin-top: 80px;
+}
+
+
+
+
+.nj{
+    background-color: rgb(81, 81, 81);
+}
+.poisk{
+    padding-left:300px ;
+    border-radius: 10px;
+    padding-top: 15px;
+    margin-left: 450px;
+    height: 40px;
+    width: 300px;
+    background-color: rgb(176, 176, 176);
+    display: flex;
+    color: rgb(0, 0, 0);
+}
+.gorod{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.vibrat{
+    background-color: rgb(195, 195, 195);
+    
+    height: 40px;
+}
+.glav{
+    margin-top: 30px;
+    display: flex;
+}
+.cate{
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    height: 700px;
+    width: 400px;
+}
+.spis{
+    padding-left: 20px;
+}
+.prod{
+    margin-left: 20px;
+    background-color: rgb(59, 59, 59);
+    height: 700px;
+    width: 1100px;
 }
