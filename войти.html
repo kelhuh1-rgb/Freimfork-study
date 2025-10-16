@@ -20,20 +20,36 @@
              <div class="key">
             <h2>напишите свой пароль</h2>
             <input type="password" id="Conpassw">
+            <button onclick="register()" class="btt">Зарегистрироваться </button>
+            <p id="message" ></p>
             </div>
         </div>
+        
+            
+        
+
         <div class="mg">
             <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" style="width: 50px;">
             <img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" style="width: 50px;">
         </div>
     </div>
     <script>
-        let gmail = document.getElementById(email);
-        let pass = document.getElementById(Passw);
-        let conpass = document.getElementById(Conpassw);
-        if(pass != conpass){
-            
+        function register(){
+        let gmail = document.getElementById("email").Value;
+        let pass = document.getElementById("Passw").Value;
+        let conpass = document.getElementById("Conpassw").Value;
+        let msg = document.getElementById("message");
+        if(!gmail || !pass || !conpass){
+            msg.innerHTML = "вы что-то пропустили";
         }
+        if(pass !== conpass){
+            msg.innerHTML = "құпия сөз дұрыс емес";
+
+        }
+        
+
+        
+    }
     </script>
 </body>
 </html>
