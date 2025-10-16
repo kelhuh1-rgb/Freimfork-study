@@ -179,6 +179,16 @@ textarea{
     height: 50px;
     width: 300px;
 }
+.btt{
+    height: 40px;
+    width: 150px;
+    margin-top: 10px;
+    margin-left: 80px;
+    background-color: rgb(144, 144, 255);
+    border-radius: 10px;
+    border: 0px;
+
+}
 .key{
     margin-top: 10px;
 }
