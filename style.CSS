@@ -142,7 +142,7 @@ header{
 }
 .kv{
     width: 500px;
-    height: 600px;
+    height: 700px;
     background-color: azure;
     border-radius: 10px;
     justify-content: center;
@@ -176,6 +176,10 @@ textarea{
     width: 300px;
 }
 #email{
+    height: 50px;
+    width: 300px;
+}
+#name{
     height: 50px;
     width: 300px;
 }
