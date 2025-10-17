@@ -10,6 +10,8 @@
     <div class="kv">
         <div class="vnu">
             <div class="gm">
+            <h2>Напишите свое  имя</h2>
+            <input type="username" id="name">
             <h2>напишите свой Gmail</h2>
             <input type="email" id="email">
             </div>
@@ -35,33 +37,39 @@
     </div>
     <script>
         function register(){
+        let name = document.getElementById("name").value;
         let gmail = document.getElementById("email").value;
         let pass = document.getElementById("Passw").value;
         let conpass = document.getElementById("Conpassw").value;
         let msg = document.getElementById("message");
+
+        if(name.length<2){
+            msg.innerHTML= "Вы неправильно написали Имя";
+            return;
+        }
         if(!gmail || !pass || !conpass){
             msg.innerHTML = "вы что-то пропустили";
             return;
         }
+      const passwordPattern = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!_%?&.])[A-Za-z\d@$!_%*?&.]{8,16}$/;
+      if (!passwordPattern.test(pass)) {
+        msg.innerHTML = " Құпиясөз күрделі емес! Символ немесе басқа критерий жоқ";
+        return;
+      }
         if(pass !== conpass){
             msg.innerHTML = "құпия сөз дұрыс емес";
              return;
         }
         if (pass.length < 8) {
-        msg.innerHTML = "🔒 Құпиясөз кем дегенде 8 символ болуы керек!";
+        msg.innerHTML = "Құпиясөз кем дегенде 8 символ болуы керек!";
          return;
-       }
-       if (!gmail.endsWith("@gmail.com")) {
-       msg.innerHTML = "Вы неправильно написали Gmail (нужно с @gmail.com)";
-      return;
-     }
+        }
+        if (!gmail.endsWith("@gmail.com")) {
+        msg.innerHTML = "Вы неправильно написали Gmail (нужно с @gmail.com)";
+        return;
+        }
        
-    msg.innerHTML = "Все вы зарегестрировались";
-    
-
-        
-
-        
+    msg.innerHTML = "Все вы зарегестрировались";  
     }
     </script>
 </body>
